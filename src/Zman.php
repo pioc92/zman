@@ -59,7 +59,7 @@ class Zman extends Carbon
      *
      * @return static
      */
-    public static function instance($date)
+    public static function instance(DateTimeInterface $date): static
     {
         $instance = parent::instance($date);
 
